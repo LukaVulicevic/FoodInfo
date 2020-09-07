@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/FoodInfo/static/css/main.7dd63364.chunk.css",
+    "main.js": "/FoodInfo/static/js/main.647eea98.chunk.js",
+    "main.js.map": "/FoodInfo/static/js/main.647eea98.chunk.js.map",
+    "runtime-main.js": "/FoodInfo/static/js/runtime-main.5def4d08.js",
+    "runtime-main.js.map": "/FoodInfo/static/js/runtime-main.5def4d08.js.map",
+    "static/js/2.e6907142.chunk.js": "/FoodInfo/static/js/2.e6907142.chunk.js",
+    "static/js/2.e6907142.chunk.js.map": "/FoodInfo/static/js/2.e6907142.chunk.js.map",
+    "index.html": "/FoodInfo/index.html",
+    "precache-manifest.669ae6510bab8fe65534fdf6a565ffd5.js": "/FoodInfo/precache-manifest.669ae6510bab8fe65534fdf6a565ffd5.js",
+    "service-worker.js": "/FoodInfo/service-worker.js",
+    "static/css/main.7dd63364.chunk.css.map": "/FoodInfo/static/css/main.7dd63364.chunk.css.map",
+    "static/js/2.e6907142.chunk.js.LICENSE.txt": "/FoodInfo/static/js/2.e6907142.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/FoodInfo/static/media/knife-salad-darken.png.fbad0d49.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5def4d08.js",
+    "static/js/2.e6907142.chunk.js",
+    "static/css/main.7dd63364.chunk.css",
+    "static/js/main.647eea98.chunk.js"
+  ]
+}
