@@ -75,6 +75,10 @@ a:hover {
   letter-spacing: 1px;
 }
 
+.error-msg {
+  font-size: 3rem;
+}
+
 /* LAYOUT */
 
 .flex-container {
@@ -98,6 +102,12 @@ a:hover {
   margin: 0 auto;
   max-width: 1000px;
   padding: 1em;
+}
+
+.error-container {
+  background-color: #2a2b2b;
+  text-align: center;
+  border-radius: 20px;
 }
 
 .search-form {

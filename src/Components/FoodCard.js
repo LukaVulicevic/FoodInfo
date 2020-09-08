@@ -19,11 +19,15 @@ const FoodCard = ({item}) => {
 
                 <p className="food-card-summary" dangerouslySetInnerHTML={{__html: item.summary}}></p>
 
-                <ol className="food-card-instructions">
-                    {item.analyzedInstructions[0].steps.map ( step => (
-                        <li key={step.number}>{step.step}</li>
-                    ))}
+                <ol className="food-card-instructions" >
+                {
+                    item.analyzedInstructions[0].steps.map ( step => (
+                    <li key={step.number}>{step.step}</li>
+                    ))
+                }
                 </ol>
+
+                
             </div>        
         </div>
     )

@@ -5,6 +5,7 @@ const SearchFood = () => {
 
     const [query, setQuery] = useState('')
     const [recipes, setRecipes] = useState([])
+    const [allRecipes, setAllRecipes] = useState([])
 
     const searchFoods = async (event) => {
         event.preventDefault()
@@ -24,19 +25,28 @@ const SearchFood = () => {
         }
      
         // Making another API call to get information about recipes
+        // In case of error it will render div element with custom made error msg
 
         const infoUrl = 'https://api.spoonacular.com/recipes/informationBulk'
 
         try {
             const recipesPromise = await fetch(`${infoUrl}${apiKey}&ids=${recipesIdArr}`)
             const recipesData = await recipesPromise.json()
-            setRecipes(recipesData)
             console.log(recipesData)
+            setRecipes(recipesData)
+            setAllRecipes( recipes.map( item => (
+                <FoodCard item={item} key={item.id}/>
+            )))
         } catch (error) {
+            setAllRecipes(<div className="container error-container">
+                                <h2 className="error-msg">We are sorry but due to our daily limit 
+                                we are not able to display any information at the moment. 
+                                Please come back later.</h2>
+                         </div>)
             console.log(error)
         }
     }
-
+    
 
     return (
         <div className="container food-flex">
@@ -54,9 +64,7 @@ const SearchFood = () => {
                     </button>
             </form>
             <div className="recipes-list">
-            {recipes.map( item => (
-                <FoodCard item={item} key={item.id}/>
-            ))}
+                {allRecipes}
             </div>
         </div>
     )
